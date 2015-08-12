@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BmetNotes</string>
+    <string name="app_name">BMET Notes</string>
     <string name="drawer_open">Menu opened</string>
     <string name="drawer_close">Menu closed</string>
     <string name="action_settings">Settings</string>
@@ -12,4 +12,8 @@
     <string name="solution_editText">\n\n\n\n\nProblem/Solution</string>
     <string name="create_button">Create Note!</string>
 
+    //add_project.xml
+    <string name="createProject_button">Create Project!</string>
+    <string name="projectName_editText">Project Name</string>
+    <string name="projectName_textView">New Project Name Here</string>
 </resources>
