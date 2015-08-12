@@ -11,7 +11,7 @@
         android:scaleType="fitCenter"
         android:minHeight="42dp"
         android:background="@null"
-        android:id="@+id/imageButton"
+        android:id="@+id/imageButtonTag"
         android:src="@drawable/ic_barcode"
         android:layout_below="@+id/toolbar_actionbar"
         android:layout_alignParentEnd="true" />
@@ -19,11 +19,11 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:hint="Tag/CE"
-        android:layout_alignBottom="@+id/imageButton"
+        android:id="@+id/editTextTag"
+        android:hint="@string/tag_editText"
+        android:layout_alignBottom="@+id/imageButtonTag"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/imageButton" />
+        android:layout_toStartOf="@+id/imageButtonTag" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -32,19 +32,19 @@
         android:scaleType="fitCenter"
         android:minHeight="42dp"
         android:background="@null"
-        android:id="@+id/imageButton1"
+        android:id="@+id/imageButtonSN"
         android:src="@drawable/ic_barcode"
-        android:layout_below="@+id/imageButton"
+        android:layout_below="@+id/imageButtonTag"
         android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1"
-        android:hint="Serial Number"
-        android:layout_alignBottom="@+id/imageButton1"
+        android:id="@+id/editTextSN"
+        android:hint="@string/sn_editText"
+        android:layout_alignBottom="@+id/imageButtonSN"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/imageButton1" />
+        android:layout_toStartOf="@+id/imageButtonSN" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -53,20 +53,20 @@
         android:scaleType="fitCenter"
         android:minHeight="42dp"
         android:background="@null"
-        android:id="@+id/imageButton3"
+        android:id="@+id/imageButtonManf"
         android:src="@drawable/ic_barcode"
-        android:layout_below="@+id/imageButton1"
+        android:layout_below="@+id/imageButtonSN"
         android:layout_alignParentEnd="true" />
 
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:hint="Manufactuer"
-        android:layout_below="@+id/imageButton1"
+        android:id="@+id/editTextManf"
+        android:hint="@string/manf_editText"
+        android:layout_below="@+id/imageButtonSN"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/imageButton1" />
+        android:layout_toStartOf="@+id/imageButtonSN" />
 
 
     <ImageButton
@@ -76,46 +76,51 @@
         android:scaleType="fitCenter"
         android:minHeight="42dp"
         android:background="@null"
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageButtonModel"
         android:src="@drawable/ic_barcode"
-        android:layout_below="@+id/imageButton3"
+        android:layout_below="@+id/imageButtonManf"
         android:layout_alignParentEnd="true" />
 
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:hint="Model"
-        android:layout_alignBottom="@+id/imageButton2"
+        android:id="@+id/editTextModel"
+        android:hint="@string/model_editText"
+        android:layout_alignBottom="@+id/imageButtonModel"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/imageButton2" />
+        android:layout_toStartOf="@+id/imageButtonModel" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
-
-        android:hint="\n\n\n\n\nProblem/Solution"
+        android:hint="@string/solution_editText"
         android:lines="8"
         android:minLines="6"
         android:gravity="top|left"
         android:maxLines="10"
         android:ems="10"
         android:scrollbars="vertical"
-        android:id="@+id/editText4"
+        android:id="@+id/editTextSolution"
         android:layout_marginTop="38dp"
-        android:layout_below="@+id/imageButton2"
+        android:layout_below="@+id/imageButtonModel"
         android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Note!"
+        android:text="@string/create_button"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="41dp"
-        android:layout_alignEnd="@+id/imageButton2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerProjects"
+        android:layout_above="@+id/button"
         android:layout_alignParentStart="true" />
 
 

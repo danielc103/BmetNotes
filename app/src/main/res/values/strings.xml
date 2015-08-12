@@ -3,4 +3,13 @@
     <string name="drawer_open">Menu opened</string>
     <string name="drawer_close">Menu closed</string>
     <string name="action_settings">Settings</string>
+
+    //add_note.xml
+    <string name="tag_editText">Tag/CE</string>
+    <string name="sn_editText">Serial Number</string>
+    <string name="manf_editText">Manufacturer</string>
+    <string name="model_editText">Model</string>
+    <string name="solution_editText">\n\n\n\n\nProblem/Solution</string>
+    <string name="create_button">Create Note!</string>
+
 </resources>
