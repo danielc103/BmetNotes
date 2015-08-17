@@ -109,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/create_button"
-        android:id="@+id/button"
+        android:id="@+id/buttonCreate"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
@@ -118,7 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spinnerProjects"
-        android:layout_above="@+id/button"
+        android:layout_above="@+id/buttonCreate"
         android:layout_alignParentStart="true" />
 
 
