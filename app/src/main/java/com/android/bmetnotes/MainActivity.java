@@ -1,14 +1,17 @@
 package com.android.bmetnotes;
 
-import android.graphics.BitmapFactory;
+import android.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.android.bmetnotes.Note.NoteFragment;
+import com.android.bmetnotes.Project.ProjectFragment;
 
 
 public class MainActivity extends AppCompatActivity
@@ -19,6 +22,8 @@ public class MainActivity extends AppCompatActivity
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private Toolbar mToolbar;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +41,33 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
+
+        Fragment fragment = null;
+        android.app.FragmentManager fragmentManager = getFragmentManager();
+
+        switch (position){
+            case 0:
+                fragment = new NoteFragment();
+                break;
+            case 1:
+                fragment = new ProjectFragment();
+                break;
+
+            case 2:
+                Toast.makeText(this, "TODO: SETTINGS", Toast.LENGTH_SHORT).show();
+                break;
+
+
+        }
+
+        getFragmentManager().beginTransaction()
+                .replace(R.id.container, fragment)
+                .commit();
+
+
+
         // update the main content by replacing fragments
-        Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
     }
 
 

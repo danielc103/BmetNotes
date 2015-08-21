@@ -3,6 +3,7 @@ package com.android.bmetnotes;
 
 import android.graphics.drawable.Drawable;
 
+
 /**
  * Created by poliveira on 24/10/2014.
  */
@@ -13,6 +14,10 @@ public class NavigationItem {
     public NavigationItem(String text, Drawable drawable) {
         mText = text;
         mDrawable = drawable;
+    }
+
+    public NavigationItem(String text){
+        mText = text;
     }
 
     public String getText() {
