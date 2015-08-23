@@ -16,4 +16,7 @@
     <string name="createProject_button">Create Project!</string>
     <string name="projectName_editText">Project Name</string>
     <string name="projectName_textView">New Project Name Here</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

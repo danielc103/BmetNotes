@@ -1,6 +1,7 @@
 package com.android.bmetnotes;
 
 import android.app.Fragment;
+import android.net.Uri;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -15,7 +16,7 @@ import com.android.bmetnotes.Project.ProjectFragment;
 
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationDrawerCallbacks {
+        implements NavigationDrawerCallbacks, NoteFragment.OnFragmentInteractionListener, ProjectFragment.OnFragmentInteractionListener {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -109,4 +110,8 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 }
